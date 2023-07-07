@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Love Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: top;
+        justify-content: left;
+        height: 100vh;
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+      }
+      #temp {
+        font-style: normal;
+        color: #474747;
+      }
+
+      .container {
+        margin-left: 15px;
+        text-align: left;
+      }
+
+      h1 {
+        color: #e83e8c;
+      }
+
+      p {
+        color: #333;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h4 onclick="playAudio()" id="temp">Please tap here first of all</h4>
+      <h1>For My Beloved</h1>
+      <p>I love you more than words can express.</p>
+      <p>You are the most beautiful person in my life.</p>
+      <p>
+        I know I did not give you enough time and I haven't exactly been the
+        ideal boyfriend either.
+      <br/>
+        Here is the truth, right from the start I knew this would eventually
+        end.
+      </p>
+      <p>I just knew I did not want to wreck your mental peace.</p> -->
+    </div>
+    <!-- <audio loop autoplay>
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio> -->
+    <audio id="myAudio">
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      function playAudio() {
+        document.getElementById("temp").style.color = "#fff"; // forecolor
+        document.getElementById("temp").style.backgroundColor = "#fff"; // backcolor
+        var audio = document.getElementById("myAudio");
+        audio.loop = true;
+        audio.play();
+      }
+      //   window.addEventListener("DOMContentLoaded", playAudio);
+    </script>
+  </body>
+</html>
