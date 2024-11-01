@@ -23,7 +23,7 @@
         background-color: var(--one);
         font-family: Arial, sans-serif;
       }
-      #temp {
+      #temp, #temp1 {
         font-style: normal;
         /* color: #474747; */
         color: var(--five);
@@ -54,9 +54,13 @@
     </style>
   </head>
   <body>
+    <!--div class = "container">
+      <h4 onclick="playAudio1()" id="temp1">Please tap here first of all</h4>
+    </div-->
     <div class = "container">
       <h4 onclick="playAudio()" id="temp">Please tap here first of all</h4>
     </div>
+     
     </br></br>
      <div class = "container">
       <h1>Checking in on 30th / October / 24  09:43 AM</h1>
@@ -91,7 +95,8 @@
       <h2>Sagar❤️</h2>
     </div>
     </br></br></br></br></br></br></br></br>
-     <div class="container">
+    
+    <div class="container">
       <h1>Checking in on 27th / Jan / 24  02:26 AM</h1>
       <p>
         It is tonight I am writing this virtual letter to you. ❤️ I had called
@@ -300,6 +305,9 @@
       <source src="audio.mp3" type="audio/mpeg" />
     </audio> -->
     <audio id="myAudio">
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="myAudio1">
       <source src="audio1.mp3" type="audio/mpeg" />
     </audio>
     <script>
@@ -309,8 +317,17 @@
         var audio = document.getElementById("myAudio");
         audio.loop = true;
         audio.play();
+      }      
+    </script>
+    <script>
+      function playAudio1() {
+        document.getElementById("temp1").style.color = "#0d1117"; // forecolor
+        document.getElementById("temp1").style.backgroundColor = "#0d1117"; // backcolor
+        var audio = document.getElementById("myAudio1");
+        audio.loop = true;
+        audio.play();
       }
-      //   window.addEventListener("DOMContentLoaded", playAudio);
+      
     </script>
   </body>
 </html>
